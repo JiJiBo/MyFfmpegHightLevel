@@ -1,11 +1,14 @@
 package com.rulerbug.myldemo
 
+import android.view.SurfaceView
+
 class Demo {
     /**
      * A native method that is implemented by the 'native-lib' native library,
      * which is packaged with this application.
      */
-    external fun stringFromJNI(): String
+
+    external fun play(s: String, sv: SurfaceView?)
 
     companion object {
         // Used to load the 'native-lib' library on application startup.
