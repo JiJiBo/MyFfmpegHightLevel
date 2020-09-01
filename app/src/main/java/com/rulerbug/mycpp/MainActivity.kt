@@ -3,6 +3,8 @@ package com.rulerbug.mycpp
 import android.os.Bundle
 import android.os.Environment
 import androidx.appcompat.app.AppCompatActivity
+import com.afollestad.assent.Permission
+import com.afollestad.assent.runWithPermissions
 import com.rulerbug.bugutils.Utils.BugDirUtils
 import com.rulerbug.bugutils.Utils.BugLogUtils
 import com.rulerbug.myldemo.Demo
@@ -19,7 +21,10 @@ class MainActivity : AppCompatActivity() {
         val demo = Demo()
         // Example of a call to a native method
         BugLogUtils.e(videoPath)
-        demo.play(videoPath, sv)
+runWithPermissions(Permission.READ_EXTERNAL_STORAGE,Permission.WRITE_EXTERNAL_STORAGE){
+    demo.play(videoPath, sv)
+}
+
     }
 
 

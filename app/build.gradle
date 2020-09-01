@@ -38,4 +38,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.github.JiJiBo:BugUtils:1.1.3'
     implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.afollestad.assent:core:3.0.0-RC4'
 }
