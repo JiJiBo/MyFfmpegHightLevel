@@ -11,20 +11,9 @@ class Demo {
     external fun play(s: String, sv: SurfaceView?)
 
     companion object {
-        // Used to load the 'native-lib' library on application startup.
+
         init {
 
-            // Used to load the 'native-lib' library on application startup.
-
-//            System.loadLibrary("native-lib");
-//            System.loadLibrary("avcodec-57");
-//            System.loadLibrary("avdevice-57");
-//            System.loadLibrary("avfilter-6");
-//            System.loadLibrary("avformat-57");
-//            System.loadLibrary("avutil-55");
-//            System.loadLibrary("postproc-54");
-//            System.loadLibrary("swresample-2");
-//            System.loadLibrary("swscale-4");
             System.loadLibrary("native-lib");
             System.loadLibrary("avcodec");
             System.loadLibrary("avdevice");
