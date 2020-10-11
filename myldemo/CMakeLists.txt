@@ -9,7 +9,14 @@ add_library( # Sets the name of the library.
         SHARED
 
         # Provides a relative path to your source file(s).
-        src/main/cpp/native-lib.cpp)
+        src/main/cpp/native-lib.cpp
+        src/main/cpp/AndroidLog.h
+        src/main/cpp/ShFfmpeg.cpp
+        src/main/cpp/ShStatue.cpp
+        src/main/cpp/ShCallBack.cpp
+        src/main/cpp/ShAudio.cpp
+        src/main/cpp/ShQueue.cpp
+        )
 
 add_library(avcodec SHARED IMPORTED)
 set_target_properties(avcodec
@@ -74,6 +81,7 @@ target_link_libraries( # Specifies the target library.
         postproc
         swresample
         swscale
+        OpenSLES
        -landroid
         # Links the target library to the log library
         # included in the NDK.

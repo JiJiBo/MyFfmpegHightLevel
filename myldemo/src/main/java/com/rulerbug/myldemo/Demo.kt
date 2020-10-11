@@ -9,6 +9,7 @@ class Demo {
      */
 
     external fun play(s: String, sv: SurfaceView?)
+    external fun start();
 
     companion object {
 
@@ -25,5 +26,9 @@ class Demo {
             System.loadLibrary("swscale");
 
         }
+    }
+
+    fun onPrepare() {
+        start()
     }
 }

@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val videoPath: String ="/storage/emulated/0/zcf/.cache/feb9b1a99e805a42985b7e45d5369b42.mp3"
+        val videoPath: String ="/storage/emulated/0/a.wav"
 
         val demo = Demo()
         // Example of a call to a native method
