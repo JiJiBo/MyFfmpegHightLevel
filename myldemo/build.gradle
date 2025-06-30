@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 android {
     compileSdk 35
     ndkVersion = "21.4.7075529"
+    namespace = "com.rulerbug.myldemo"
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17

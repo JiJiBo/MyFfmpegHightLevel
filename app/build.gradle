@@ -10,11 +10,11 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
-
+    namespace = "com.rulerbug.mycpp"
     defaultConfig {
         applicationId "com.rulerbug.mycpp"
         minSdkVersion 23
-        targetSdkVersion 35
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
 
